@@ -84,32 +84,6 @@ t.test1(p: "Hey")
 // Le second type générique est utilisé comme paramètre d'une methode nommé maMethode
 // MaClasse possède une methode générique nommé maMethodeGenerique prennant 2 parametres le 1er est générique, le 2nd est un Float
 
-func method<MonType>(p:MonType,s:String){
-    
-    switch p {
-    case let value as Int:
-        print(value)
-    default:break
-    }
-    
-}
-method(p: Int(42), s: "p")
-
-struct MaStruct<ParametreDeLaPropriete,ParametreDeLaMethode> {
-    var maProp:ParametreDeLaPropriete
-    func maMethode(p:ParametreDeLaMethode) {
-        
-    }
-    
-    func maMethodeGenerique<X>(p:X)  {
-        
-    }
-}
-
-let s = MaStruct<String,Float>(maProp: "Content")
-
-s.maProp
-
 
 
 

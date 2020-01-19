@@ -68,8 +68,8 @@ fonctionExemple(parametre: classA)
 // On peut lui donner un objet de type B
 fonctionExemple(parametre: classB)
 
-// La fonction prennant un objet de type A en parmetre
-func fonctionExempleV2(parametre:A) {
+// La fonction prennant un objet de type C en parmetre
+func fonctionExempleV2(parametre:C) {
     
     switch parametre {
     case let objA as A:
@@ -82,9 +82,7 @@ func fonctionExempleV2(parametre:A) {
 }
 
 print("fonctionExempleV2")
-fonctionExempleV2(parametre: classA)
-fonctionExempleV2(parametre: classB)
-fonctionExempleV2(parametre: classC)
+
 // Corriger fonctionExempleV2 pour qu'elle puisse gérer les classes de type A, B et C
 // Expliquer pourquoi elle ne fonctionne pas comme attendu.
 
@@ -93,11 +91,5 @@ fonctionExempleV2(parametre: classC)
 //:
 //: Créer une methode attendant en parametre un objet de type B
 //: Appeler dans cette methode maMethodeDeLaClasseC()
-func toto(_ param:B) {
-    if let p = param as? C {
-        p.maMethodeDeLaClasseC()
-    }
-}
 
-toto(classB)
 //: [Next](@next)
