@@ -98,6 +98,13 @@ print("The current value of fiveHundred is: \(fiveHundred)")
 
 //: __EXO: Injecter un float, un int et une chaine de charactère dans une chaine de charactère.__
 // ICI
+// ICI
+let unFloat:Float = 1.0
+let unInt = 2
+let unString = "Injection"
+let fullPower = "\(unString) \(unInt) \(unFloat)"
+
+print("Ici j'injecte les variables \(fullPower)")
 
 
 //: ---
