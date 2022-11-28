@@ -53,4 +53,20 @@ func addMul(firstAdder: Int, secondAdder: Int, multiplier: Int = 1) -> Int
 addMul(firstAdder: 1, secondAdder: 2)
 
 
+
+//créer une fonction prenant en paramètre un tableau de Int et renvoie la tableau converti en doubles
+//fonction convertToDouble
+
+func convertToDouble(arrayToConvert: [Int]) -> [Double]
+{
+    var tmpArray = [Double]()
+    for value in arrayToConvert{
+        tmpArray.append(Double(value))
+    }
+    return tmpArray
+}
+
+var tabInt = [1,2,3]
+
+print(convertToDouble(arrayToConvert: tabInt))
 //: [Next](@next)
