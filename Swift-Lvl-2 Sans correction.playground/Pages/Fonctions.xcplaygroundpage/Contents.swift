@@ -69,4 +69,28 @@ func convertToDouble(arrayToConvert: [Int]) -> [Double]
 var tabInt = [1,2,3]
 
 print(convertToDouble(arrayToConvert: tabInt))
+
+//créer une fonction prennat 3 params
+// un tableau de tableaux de Int
+// un string
+// un float
+// elle ne renvoie rien
+// elle print le contenu du tableau de tableaux
+// le nom du tableau ne doit pas apparaitre lors de l'appel de la fonction
+
+func uselessFunc(_ arrayOfArrayOfInt : [[Int]], unString:String, unFloat:Float){
+    for array in arrayOfArrayOfInt{
+        for value in array{
+            print(value)
+        }
+    }
+}
+
+let arrayOfArrayOfInt = [
+    [1,2,3,4,5],
+    [2,4,4,4,6,6,6,6,6],
+    [5,0,7,3,1,7]
+]
+
+uselessFunc(arrayOfArrayOfInt, unString: "uselessString", unFloat: 1.0);
 //: [Next](@next)
